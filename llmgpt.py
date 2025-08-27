@@ -37,7 +37,7 @@ if prompt := st.chat_input("Ask me anything..."):
 
     llm = Ollama(
         model="mistral",   # ⚡ Faster than llama2
-        base_url="http://localhost:11434"
+        base_url="https://minichatgpt.streamlit.app/"
     )
 
     chain = template | llm | StrOutputParser()
